@@ -1,0 +1,14 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #000;
+}
+
+video {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+}
