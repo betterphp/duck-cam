@@ -6,6 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<video src="http://192.168.1.10:8082/stream" type="video/ogg" autoplay controls></video>
+		<video src="http://<?php echo $_SERVER['SERVER_NAME']; ?>:8082/stream" type="video/ogg" autoplay controls></video>
 	</body>
 </html>
