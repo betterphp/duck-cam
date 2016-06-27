@@ -1,0 +1,11 @@
+[Unit]
+Description=Duck-cam stream
+After=network.target
+
+[Service]
+User=nobody
+Group=nogroup
+ExecStart=/usr/bin/cvlc rtsp://192.168.1.33:554/ISAPI/streaming/channels/101?auth=YWRtaW46YWRtaW4K --sout '#transcode{vcodec=theo,vb=1024,scale=1}:http{mux=ogg,dst=127.0.0.1:8082/stream}'
+
+[Install]
+WantedBy=multi-user.target
